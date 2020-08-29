@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<body>
+    <style>
+        h1 {
+            color: red;
+            font-size: 50px;
+            font-family: monoospace, sans-serif;
+            background-color: #f1f4ffff;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            margin: 0px 0px 10px 0px;
+            box-sizing: content-box;
+            width: 10%;
+            border: inset blue 10px;
+            padding: 5px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+        
+        .marginalform {
+            margin: 40px 15px 0px 5px;
+            position: relative;
+            top: 45px;
+        }
+        
+        body {
+            background-color: #f1ded1;
+            font-family: fantasy;
+            color: royalblue;
+            background: url("img/myp.png");
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            background-position: 0% 30%;
+        }
+        
+        input {
+            margin: 5px 15px 10px 5px;
+            width: 80px;
+        }
+        
+        .feature {
+            border: 3px solid black;
+            border-radius: 6px;
+            margin: 10px;
+            padding: 5px;
+            background-color: #F5e356;
+            width: 40%;
+        }
+        
+        hr {
+            border-color: brown;
+            opacity: 0.5;
+        }
+        
+        header {
+            background-color: hsl(0, 80%, 25%);
+            height: 10%;
+            width: 87%;
+            font-size: 20px;
+            position: absolute;
+            top: 2px;
+            margin: 0px 0px 30px 0px;
+            color: black;
+        }
+        
+        main {
+            float: right;
+            width: 40%;
+            margin-right: 20%;
+        }
+        
+        main:hover {
+            transform: scale(1.1);
+        }
+        
+        .left {
+            float: left;
+            margin: 1.5%;
+            width: 30%;
+        }
+        
+        nav {
+            background-color: hsl(180, 80%, 25%);
+            margin-top: 27px;
+        }
+        
+        nav ul {
+            margin: 0px;
+            padding: 5px 0px 5px 30px;
+        }
+        
+        nav li {
+            display: inline;
+            margin-right: 20px;
+            color: #D3D0DA;
+        }
+        
+        a:hover {
+            color: red;
+        }
+        
+        a {
+            color: #f1ded1;
+        }
+        
+        .boxch {
+            margin: 40px 15px 0px 5px;
+            position: relative;
+            top: 0px;
+        }
+        
+        .anime {
+            animation-name: myanime;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes myanime {
+            0% {
+                background-color: #f1f4ffff;
+            }
+            20% {
+                background-color: #fdfd96;
+            }
+            40% {
+                background-color: #89cff0;
+            }
+            60% {
+                background-color: #dcae96;
+            }
+            80% {
+                background-color: #c8a2c8;
+            }
+            100% {
+                background-color: #f1f4ffff;
+            }
+        }
+    </style>
+    <h1 class="anime">PCN</h1>
+    <header> PCN
+        <nav>
+            <ul>
+                <li><a href="https://www.oyorooms.com/np/" target="_blank">lodges</a></li>
+                <li><a href="https://adventuresportsnepal.com/activities/thrills/" target="_blank">adventerous sports</a></li>
+                <li><a href="url-for-foodspot">for foodies</a></li>
+                <li><a href="url-for-culturalspots">cultural and histoical places</a></li>
+                <li><a href="contact.html" target="_blank">traffic light</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="marginalform">
+        <br>Already member</br>
+        <form action="url-where-you">
+            <input type="text" placeholder="username/ID" required>
+            <input type="password" placeholder="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <hr>
+    <form action="url-for-new-account" class="marginalform feature left">
+        <br>Create account</br>
+        <br>
+        <input type="text" placeholder="firstname" required>
+        <input type="text" placeholder="lastname" required>
+        </br>
+        <input type="number" placeholder="mobile number" patten="[0-9]{,10}" required>
+        <input type=" email" placeholder="Email">
+        <br>
+        <input type="password" placeholder="password" pattern=".{10,}" title="atleast 10 character" required>
+        <input type="text" pattern="[0-9][a-zA-Z]{2}[0-9]{2}[a-zA-Z]{2}[0-9]{3}" placeholder="USN" required>
+        </br>
+        <div class="boxch">Gender
+            <br>
+            <label for="male">
+                    <input type="radio"  name="gender " checked>male
+                </label>
+            <label for="female">
+                   <input type="radio" name="gender">female
+                </label>
+            <label for="other">
+                    <input type="radio" name="gender ">other 
+                 </label>
+            </br>
+        </div>
+        <button type="submit " style="margin: 10px; ">Done</button>
+    </form>
+    <main>
+        <div class="feature " style="background:radial-gradient(closest-side,red,#d28f1b,#b5b3be,orange,white); ">
+
+            <h3 style="color:red ">Our services</h3>
+            <ul text-algn="center ">
+                <li>information tourist spot</li>
+                <li>lodiging and fooding infrmation</li>
+                <li>adveneterous sprots info.</li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
